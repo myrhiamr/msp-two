@@ -7,7 +7,7 @@ function App() {
      <p>good luck cute pie! you got this!</p>
      <p>hello</p>
      <p>this is a test</p>
-     <h2>Hey</h2>
+     <h2>Hey hi</h2>
     </div>
   );
 }
