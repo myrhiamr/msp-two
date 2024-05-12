@@ -22,8 +22,4 @@ function Navbar() {
   );
 }
 
-<<<<<<< HEAD
-export default Navbargit 
-=======
 export default Navbar;
->>>>>>> 3ecee328356c2e3884c8aa0537bd5d98885942d5
