@@ -11,3 +11,56 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Navbar section */
+.navbar {
+  background-color: #dfb4c9;
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 80px; /* Adjust the height of the logo */
+  animation: spin 4s linear infinite; /* Adding animation to logo */
+}
+
+.shop-name {
+  margin-right: 10; /* Add some space between the logo and shop name */
+  color: rgb(48, 46, 46);
+  font-size: xx-large;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #00c3ff;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  color: #076f7c; /* Change color on hover */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
