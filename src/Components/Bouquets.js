@@ -8,28 +8,21 @@ import bouquetTwo from '../images/bouquet-two.jpeg';
 import bouquetThree from '../images/bouquet-three.jpeg';
 import bouquetFour from '../images/bouquet-four.jpeg';
 
-
-
-
 function Bouquets() {
   return (
     <Container>
-      <Row>
-
-      <Col xs={6} md={4}>
-          <Image src={bouquetOne} alt="Bouquet One" thumbnail />
+      <Row className="justify-content-center">
+        <Col>
+          <Image src={bouquetOne} width={400} height={400} alt="Bouquet One" thumbnail />
         </Col>
-
-        <Col xs={6} md={4}>
-          <Image src={bouquetTwo} alt="Bouquet Two" thumbnail />
+        <Col>
+          <Image src={bouquetTwo} width={400} height={400} alt="Bouquet Two" thumbnail />
         </Col>
-
-        <Col xs={6} md={4}>
-          <Image src={bouquetThree} alt="Bouquet Three" thumbnail />
+        <Col>
+          <Image src={bouquetThree} width={400} height={1200} alt="Bouquet Three" thumbnail />
         </Col>
-
-        <Col xs={6} md={4}>
-          <Image src={bouquetFour} alt="Bouquet Four" thumbnail />
+        <Col>
+          <Image src={bouquetFour} width={400} height={400} alt="Bouquet Four" thumbnail />
         </Col>
       </Row>
     </Container>
@@ -37,16 +30,4 @@ function Bouquets() {
 }
 
 export default Bouquets;
-
-
-
-
-
-
-
-
-
-
-
-
 
