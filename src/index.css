@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-/* Navbar section */
+/* Navbar styles */
 .navbar {
   background-color: #dfb4c9;
   padding: 20px 0;
@@ -62,5 +62,107 @@ code {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+/* Footer styles */
+.footer {
+  position: relative;
+  background-color: #dfb4c9;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-contact,
+.footer-social {
+  flex: 5;
+  margin: 0 10px;
+}
+
+.footer-logo {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-social {
+  text-align: right;
+}
+
+.footer-social ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-social ul li {
+  margin-left: 10px;
+}
+
+.footer-social ul li:first-child {
+  margin-left: 0;
+}
+
+.footer-social ul li a svg {
+  font-size: 54px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animated-footer {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-logo {
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animated-icons {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
