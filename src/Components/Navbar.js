@@ -4,7 +4,7 @@ import '../index.css'; // Import index.css file
 function Navbar() {
   return (
     <nav className="navbar"> {/* Apply "navbar" class to the nav element */}
-      <div className="container">
+      <div className="navbar-container">
         {/* Logo */}
         <div className="logo">
           <img src="/logo192.png" alt="Flower Shop Logo" />
