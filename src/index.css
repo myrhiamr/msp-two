@@ -12,28 +12,72 @@ code {
     monospace;
 }
 
-<<<<<<< HEAD
-/* Footer styles */
-.footer {
-  position: relative;
-  background-color: #dfb4c9;
-}
-.footer-container {
-=======
-/* Navbar section */
+/* Navbar styles */
 .navbar {
   background-color: #dfb4c9;
   padding: 20px 0;
 }
 
 .container {
->>>>>>> 3ecee328356c2e3884c8aa0537bd5d98885942d5
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-<<<<<<< HEAD
+.logo img {
+  height: 80px; /* Adjust the height of the logo */
+  animation: spin 4s linear infinite; /* Adding animation to logo */
+}
+
+.shop-name {
+  margin-right: 10; /* Add some space between the logo and shop name */
+  color: rgb(48, 46, 46);
+  font-size: xx-large;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #00c3ff;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  color: #076f7c; /* Change color on hover */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Footer styles */
+.footer {
+  position: relative;
+  background-color: #dfb4c9;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footer-bottom {
   position: absolute;
   bottom: 0;
@@ -71,38 +115,6 @@ code {
 
 .footer-social ul li a svg {
   font-size: 54px;
-=======
-.logo img {
-  height: 80px; /* Adjust the height of the logo */
-  animation: spin 4s linear infinite; /* Adding animation to logo */
-}
-
-.shop-name {
-  margin-right: 10; /* Add some space between the logo and shop name */
-  color: rgb(48, 46, 46);
-  font-size: xx-large;
-}
-
-.nav-links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
-  display: inline;
-  margin-right: 20px;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #00c3ff;
-  font-weight: bold;
-}
-
-.nav-links li a:hover {
-  color: #076f7c; /* Change color on hover */
->>>>>>> 3ecee328356c2e3884c8aa0537bd5d98885942d5
 }
 
 @keyframes spin {
@@ -112,7 +124,6 @@ code {
   to {
     transform: rotate(360deg);
   }
-<<<<<<< HEAD
 }
 
 .animated-footer {
@@ -154,6 +165,4 @@ code {
   to {
     opacity: 1;
   }
-=======
->>>>>>> 3ecee328356c2e3884c8aa0537bd5d98885942d5
 }
