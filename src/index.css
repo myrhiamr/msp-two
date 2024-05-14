@@ -1,10 +1,13 @@
 body {
+  
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
+  
 }
 
 code {
@@ -12,157 +15,27 @@ code {
     monospace;
 }
 
-/* Navbar styles */
-.navbar {
-  background-color: #dfb4c9;
-  padding: 20px 0;
-}
+/* Image section & About */
 
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo img {
-  height: 80px; /* Adjust the height of the logo */
-  animation: spin 4s linear infinite; /* Adding animation to logo */
-}
-
-.shop-name {
-  margin-right: 10; /* Add some space between the logo and shop name */
-  color: rgb(48, 46, 46);
-  font-size: xx-large;
-}
-
-.nav-links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
-  display: inline;
-  margin-right: 20px;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #00c3ff;
-  font-weight: bold;
-}
-
-.nav-links li a:hover {
-  color: #076f7c; /* Change color on hover */
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-/* Footer styles */
-.footer {
-  position: relative;
-  background-color: #dfb4c9;
-}
-
-.footer-container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-bottom {
-  position: absolute;
-  bottom: 0;
+.image-section {
   width: 100%;
+  height: 500px; /* Assuming average navbar height is 60px */
+  background: url('./images/headImage.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.about-us-section {
+  padding: 2em;
+  color: #6F4E37;
+  background-color: #FFFDF9;
   text-align: center;
 }
 
-.footer-contact,
-.footer-social {
-  flex: 5;
-  margin: 0 10px;
+.about-us-section h2 {
+  margin-bottom: 1em;
 }
 
-.footer-logo {
-  flex: 1;
-  text-align: center;
-}
-
-.footer-social {
-  text-align: right;
-}
-
-.footer-social ul {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.footer-social ul li {
-  margin-left: 10px;
-}
-
-.footer-social ul li:first-child {
-  margin-left: 0;
-}
-
-.footer-social ul li a svg {
-  font-size: 54px;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.animated-footer {
-  animation: slideIn 0.5s ease-in-out;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animated-logo {
-  animation: spin 4s linear infinite;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.animated-icons {
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.about-us-section p {
+  margin: 0 auto;
+  max-width: 600px;
 }

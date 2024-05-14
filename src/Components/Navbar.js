@@ -1,25 +1,39 @@
 import React from 'react';
-import '../index.css'; // Import index.css file
+import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import MainLogo from '../images/MainLogo.jpg'; 
 
-function Navbar() {
+function CustomNavbar() {
   return (
-    <nav className="navbar"> {/* Apply "navbar" class to the nav element */}
-      <div className="navbar-container">
-        {/* Logo */}
-        <div className="logo">
-          <img src="/logo192.png" alt="Flower Shop Logo" />
-        </div>
-        {/* Shop Name */}
-        <h1 className="shop-name">FLOWER SHOP</h1>
-        {/* Navigation Links */}
-        <ul className="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#bouquets">Bouquets</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-        </ul>
-      </div>
-    </nav>
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container fluid style={{ backgroundColor: '#FFFDF9' }}>
+        <Navbar.Brand as={Link} to="/">
+          <img
+            src={MainLogo} 
+            alt="Logo"
+            style={{ height: '120px', marginRight: '10px' }}
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link as={Link} to="/" style={{ fontSize: '25px' }}>Home</Nav.Link>
+            <Nav.Link as={Link} to="/reviews" style={{ fontSize: '25px' }}>Reviews</Nav.Link>
+            <NavDropdown style={{ fontSize: '25px' }} title="Bouquets" id="basic-nav-dropdown">
+              <NavDropdown.Item as={Link} to="/bouquet-one">Daisy</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/bouquet-two">Garden Roses</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/bouquet-three">Tulips</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item as={Link} to="/about-us">About Us</NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-export default Navbar;
+export default CustomNavbar;

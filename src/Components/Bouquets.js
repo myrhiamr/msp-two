@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
@@ -13,16 +14,24 @@ function Bouquets() {
     <Container>
       <Row className="justify-content-center">
         <Col>
-          <Image src={bouquetOne} width={400} height={400} alt="Bouquet One" thumbnail />
+          <Link to="/bouquet-one">
+            <Image src={bouquetOne} width={400} height={400} alt="Bouquet One" thumbnail />
+          </Link>
         </Col>
         <Col>
-          <Image src={bouquetTwo} width={400} height={400} alt="Bouquet Two" thumbnail />
+          <Link to="/bouquet-two">
+            <Image src={bouquetTwo} width={400} height={400} alt="Bouquet Two" thumbnail />
+          </Link>
         </Col>
         <Col>
-          <Image src={bouquetThree} width={400} height={1200} alt="Bouquet Three" thumbnail />
+          <Link to="/bouquet-three">
+            <Image src={bouquetThree} width={500} height={1200} alt="Bouquet Three" thumbnail />
+          </Link>
         </Col>
         <Col>
-          <Image src={bouquetFour} width={400} height={400} alt="Bouquet Four" thumbnail />
+          <Link to="/bouquet-four">
+            <Image src={bouquetFour} width={400} height={400} alt="Bouquet Four" thumbnail />
+          </Link>
         </Col>
       </Row>
     </Container>
@@ -30,4 +39,3 @@ function Bouquets() {
 }
 
 export default Bouquets;
-
