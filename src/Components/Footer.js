@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link component from React Router
 
 function Footer() {
   return (
@@ -17,16 +18,16 @@ function Footer() {
             <h5 className="mb-3" style={{ letterSpacing: '2px', color: '#6F4E37' }}>links</h5>
             <ul className="list-unstyled mb-0">
               <li className="mb-1">
-                <a href="#!" style={{ color: '#6F4E37' }}>Frequently Asked Questions</a>
+                <Link to="/faq" style={{ color: '#6F4E37' }}>Frequently Asked Questions</Link>
               </li>
               <li className="mb-1">
-                <a href="#!" style={{ color: '#6F4E37' }}>Delivery</a>
+                <Link to="/delivery" style={{ color: '#6F4E37' }}>Delivery</Link>
               </li>
               <li className="mb-1">
-                <a href="#!" style={{ color: '#6F4E37' }}>Pricing</a>
+                <Link to="/pricing" style={{ color: '#6F4E37' }}>Pricing</Link>
               </li>
               <li>
-                <a href="#!" style={{ color: '#6F4E37' }}>Where we deliver?</a>
+                <Link to="/delivery-locations" style={{ color: '#6F4E37' }}>Where we deliver?</Link>
               </li>
             </ul>
           </div>
