@@ -9,8 +9,10 @@ import BouquetOne from "./Components/BouquetOne";
 import BouquetTwo from "./Components/BouquetTwo";
 import BouquetThree from "./Components/BouquetThree";
 import BouquetFour from "./Components/BouquetFour";
-
-///fdpw 1.1
+import FAQPage from "./Components/FAQPage.js";
+import DeliveryPage from "./Components/DeliveryPage";
+import PricingPage from "./Components/PricingPage";
+import DeliveryLocationsPage from "./Components/DeliveryLocationsPage";
 
 function App() {
   return (
@@ -36,6 +38,11 @@ function App() {
           <Route path="/bouquet-two" element={<BouquetTwo />} />
           <Route path="/bouquet-three" element={<BouquetThree />} />
           <Route path="/bouquet-four" element={<BouquetFour />} />
+          {/* New routes for additional pages */}
+          <Route path="/faq" element={<FAQPage />} />
+          <Route path="/delivery" element={<DeliveryPage />} />
+          <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/delivery-locations" element={<DeliveryLocationsPage />} />
         </Routes>
         <Reviews />
         <Footer />
