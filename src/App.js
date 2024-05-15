@@ -9,7 +9,7 @@ import BouquetOne from "./Components/BouquetOne";
 import BouquetTwo from "./Components/BouquetTwo";
 import BouquetThree from "./Components/BouquetThree";
 import BouquetFour from "./Components/BouquetFour";
-import FAQPage from "./Components/FAQPage.js";
+import FAQPage from "./Components/FAQPage";
 import DeliveryPage from "./Components/DeliveryPage";
 import PricingPage from "./Components/PricingPage";
 import DeliveryLocationsPage from "./Components/DeliveryLocationsPage";
