@@ -10,6 +10,8 @@ import BouquetTwo from "./Components/BouquetTwo";
 import BouquetThree from "./Components/BouquetThree";
 import BouquetFour from "./Components/BouquetFour";
 
+
+
 function App() {
   return (
     <Router>
@@ -17,7 +19,7 @@ function App() {
         <Navbar />
         <div>
           <div className="image-section">
-            {/* Add any image or background image here if needed */}
+            {/* Add any image or background image here if needed  whooo database*/}
           </div>
           <div className="about-us-section">
             <h2>Glad you are here!</h2>
