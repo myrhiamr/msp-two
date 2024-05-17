@@ -1,19 +1,47 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 function Reviews() {
   const [comments, setComments] = useState([]);
   const [name, setName] = useState('');
   const [comment, setComment] = useState('');
+  const [loading, setLoading] = useState(true);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (name && comment) {
-      const newComment = { name, comment, date: new Date().toLocaleString() };
-      setComments([...comments, newComment]);
-      setName('');
-      setComment('');
+  useEffect(() => {
+    fetchComments();
+  }, []);
+
+  const fetchComments = async () => {
+    try {
+      const response = await axios.get('/api/reviews')
+      setComments(response.data);
+      setLoading(false);
+    } catch (error) {
+      console.error('Error fetching comments:', error);
     }
   };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (name && comment) {
+      try {
+        const response = await axios.post('/api/reviews', {
+          name,
+          comment,
+          date: new Date().toLocaleString()
+        });
+        setComments([...comments, response.data]);
+        setName('');
+        setComment('');
+      } catch (error) {
+        console.error('Error adding comment:', error);
+      }
+    }
+  };
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div style={{ width: '100vw', backgroundColor: '#FFFDF9', padding: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
