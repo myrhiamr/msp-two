@@ -1,4 +1,5 @@
 import React from 'react';
+import './DeliveryLocationsPage.css'; // Import custom CSS for styling
 
 function DeliveryLocationsPage() {
   return (
@@ -20,3 +21,4 @@ function DeliveryLocationsPage() {
 }
 
 export default DeliveryLocationsPage;
+
