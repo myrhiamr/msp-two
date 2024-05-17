@@ -2,9 +2,19 @@ import React from 'react';
 
 function PricingPage() {
   return (
-    <div>
-      <h1>Pricing</h1>
-      <p>This is the pricing page content.</p>
+    <div className="pricing-page">
+      <h1 className="page-title">Pricing</h1>
+      <div className="pricing-options">
+        <div className="pricing-option">
+          <h3>Standard Bouquet</h3>
+          <p>Starting at $29.99</p>
+        </div>
+        <div className="pricing-option">
+          <h3>Luxury Bouquet</h3>
+          <p>Starting at $59.99</p>
+        </div>
+        {/* Add more pricing options */}
+      </div>
     </div>
   );
 }
