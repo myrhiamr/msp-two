@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css'; 
 import Navbar from "./Components/Navbar";
 import Bouquets from "./Components/Bouquets";
-import Reviews from "./Components/Reviews";
+import Reviews from "./Components/Review";
 import Footer from "./Components/Footer";
 import BouquetOne from "./Components/BouquetOne";
 import BouquetTwo from "./Components/BouquetTwo";
