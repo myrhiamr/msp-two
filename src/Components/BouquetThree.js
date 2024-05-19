@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import bouquetThree from '../images/bouquet-three.jpeg'; 
 
 function BouquetThree() {

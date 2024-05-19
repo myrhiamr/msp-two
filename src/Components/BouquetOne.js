@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import bouquetOne from '../images/bouquet-one.jpeg'; // Adjust the path as necessary
 
 function BouquetOne() {
