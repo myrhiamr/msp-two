@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .env
 
 # dependencies
@@ -21,3 +22,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+=======
+node_modules/
+>>>>>>> f28085936d7ceb0a1701c1aff219b7e5d8ef3903
